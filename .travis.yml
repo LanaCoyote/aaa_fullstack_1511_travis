@@ -1,4 +1,16 @@
 language: node_js
+<<<<<<< HEAD
 node_js:
   - "stable"
+=======
+
+node_js:
+ - "stable"
+env:
+ - NODE_ENV="development"
+ - NODE_ENV="production";SESSION_SECRET="la li"
+
+services:
+ - mongodb
+>>>>>>> 75a16561f51ca35a2b0df23be502ea0321a4e025
 script: gulp travis

@@ -19,9 +19,17 @@ var notify = require('gulp-notify');
 
 // Development tasks
 // --------------------------------------------------------------
+<<<<<<< HEAD
 gulp.task('travis', ['build','testServerJS'], function(){
     process.exit(0);
 });
+=======
+
+gulp.task('travis', ['build','testServerJS'], function() {
+  process.exit(0);
+});
+
+>>>>>>> 75a16561f51ca35a2b0df23be502ea0321a4e025
 // Live reload business.
 gulp.task('reload', function () {
     livereload.reload();
