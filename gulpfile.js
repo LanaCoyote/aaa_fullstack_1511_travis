@@ -20,10 +20,9 @@ var notify = require('gulp-notify');
 // Development tasks
 // --------------------------------------------------------------
 
-gulp.task('travis', ['build','testServerJS'], function() {
-  process.exit(0);
+gulp.task('travis', ['build','testServerJS'], function(){
+    process.exit(0);
 });
-
 // Live reload business.
 gulp.task('reload', function () {
     livereload.reload();
@@ -78,13 +77,14 @@ gulp.task('testServerJSWithCoverage', function (done) {
                 .on('end', done);
         });
 });
-
 gulp.task('testBrowserJS', function (done) {
     karma.start({
         configFile: __dirname + '/tests/browser/karma.conf.js',
         singleRun: true
     }, done);
 });
+
+
 
 gulp.task('buildCSS', function () {
 
